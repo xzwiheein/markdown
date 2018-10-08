@@ -93,7 +93,6 @@ typedef struct alarmin
 	UINT32 daylight_saving;//夏令时，未初始化
 	xmlDocPtr msg; //分配内存
 }alarmin_t;
-
 ```  
 3. *savedmsgList*的类型
 ```c
@@ -105,6 +104,7 @@ typedef struct
 	struct timeval alarmtime; //未使用，未初始化
 	int msgstateflag; //0 is "Changed", 1 is "Initialized"，未初始化
 	xmlNodePtr msg; // =NULL
+}
 ```
 
 
